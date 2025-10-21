@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS & JS Animations Showcase</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Defer script loading so it runs after the HTML is parsed -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>🎬 Bringing Web Pages to Life</h1>
+        <p>An assignment combining CSS Animations and JavaScript Functions.</p>
+    </header>
+
+    <main class="container">
+
+        <!-- Part 1: CSS3 Transitions and Animations -->
+        <section class="demo-section">
+            <h2>Part 1: Pure CSS3 Transitions & Animations</h2>
+            <p>These effects are created using only CSS. Hover over the button and watch the pulsing box.</p>
+            <div class="css-demo-area">
+                <button class="fancy-button">Hover Me!</button>
+                <div class="pulse-box">I pulse</div>
+                <div class="loader"></div>
+            </div>
+        </section>
+
+        <!-- Part 2: JavaScript Functions -->
+        <section class="demo-section">
+            <h2>Part 2: JavaScript Functions Demo</h2>
+            <p>Using functions with parameters, return values, and clear scope.</p>
+            <div class="js-demo-area">
+                <label for="name-input">Enter Your Name:</label>
+                <input type="text" id="name-input" placeholder="e.g., Alex">
+                <button id="greet-btn">Generate Greeting</button>
+                <p><strong>Output:</strong> <span id="greeting-output">...</span></p>
+            </div>
+        </section>
+
+        <!-- Part 3: Combining CSS Animations with JavaScript -->
+        <section class="demo-section">
+            <h2>Part 3: Triggering CSS Animations with JS</h2>
+            <p>Click the buttons below to dynamically trigger animations on the page.</p>
+            
+            <!-- Demo 1: Triggering card animations -->
+            <div class="js-animation-trigger">
+                <button id="animate-cards-btn">Animate Cards</button>
+                <div class="card-container">
+                    <div class="card">Card 1</div>
+                    <div class="card">Card 2</div>
+                    <div class="card">Card 3</div>
+                </div>
+            </div>
+
+            <!-- Demo 2: Modal window -->
+            <div class="js-animation-trigger">
+                 <button id="open-modal-btn">Open Modal Window</button>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- The Modal Window (initially hidden) -->
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal-content" id="modal-content">
+            <h3>Hello from the Modal!</h3>
+            <p>This modal's entrance and exit are animated using CSS, but triggered entirely by JavaScript functions.</p>
+            <button id="close-modal-btn">Close Me</button>
+        </div>
+    </div>
+
+</body>
+</html>
